@@ -6,4 +6,7 @@ def index(request):
     if request.method == "POST":
         return HttpResponse("You must have POSTed something")
     else:
-    return HttpResponse("Hello, world!")
+        return HttpResponse("Hello, world!")
+    
+def about_me(request):
+    return HttpResponse("This is the About page!")
